@@ -22,7 +22,7 @@ A [Waterline](https://github.com/waterlinejs) adapter for
 ## Install
 
 ```sh
-$ npm install waterline-sqlite3 --save
+$ npm install waterline-sqlite3-es5 --save
 ```
 
 ## Configuration
@@ -36,7 +36,7 @@ module.exports.connections = {
      * Database instance type. Specify whether to store the database on disk
      * or in memory.
      */
-    adapter: 'waterline-sqlite3', // or 'memory'
+    adapter: 'waterline-sqlite3-es5', // or 'memory'
 
     /**
      * Location of file if type='disk'
@@ -58,8 +58,8 @@ MIT
 [<img src='http://i.imgur.com/Y03Jgmf.png' height='64px'>](http://langa.io)
 
 
-[npm-image]: https://img.shields.io/npm/v/waterline-sqlite3.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/waterline-sqlite3
+[npm-image]: https://img.shields.io/npm/v/waterline-sqlite3-es5.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/waterline-sqlite3-es5
 [ci-image]: https://img.shields.io/travis/waterlinejs/sqlite3-adapter/master.svg?style=flat-square
 [ci-url]: https://travis-ci.org/waterlinejs/sqlite3-adapter
 [daviddm-image]: http://img.shields.io/david/waterlinejs/sqlite3-adapter.svg?style=flat-square

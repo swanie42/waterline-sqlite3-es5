@@ -12,7 +12,7 @@ const AdapterError = require('./error');
 
 const Adapter = {
 
-  identity: 'waterline-sqlite3',
+  identity: 'waterline-sqlite3-es5',
 
   wlSqlOptions: {
     parameterized: true,

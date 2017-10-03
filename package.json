@@ -1,131 +1,32 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "waterline-sqlite3@^1.0.4",
-        "scope": null,
-        "escapedName": "waterline-sqlite3",
-        "name": "waterline-sqlite3",
-        "rawSpec": "^1.0.4",
-        "spec": ">=1.0.4 <2.0.0",
-        "type": "range"
-      },
-      "/Users/jeff/workspace/pig-console"
-    ]
-  ],
-  "_from": "waterline-sqlite3@>=1.0.4 <2.0.0",
-  "_inCache": true,
-  "_location": "/waterline-sqlite3",
-  "_nodeVersion": "6.10.2",
-  "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/waterline-sqlite3-1.0.4.tgz_1492457359841_0.06916462513618171"
-  },
-  "_npmUser": {
-    "name": "balderdash",
-    "email": "nowhere@balderdash.io"
-  },
-  "_npmVersion": "3.10.10",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "waterline-sqlite3@^1.0.4",
-    "scope": null,
-    "escapedName": "waterline-sqlite3",
-    "name": "waterline-sqlite3",
-    "rawSpec": "^1.0.4",
-    "spec": ">=1.0.4 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/waterline-sqlite3/-/waterline-sqlite3-1.0.4.tgz",
-  "_shasum": "6f63365b8bcdff52b37867f64612806413eace33",
-  "_shrinkwrap": null,
-  "_spec": "waterline-sqlite3@^1.0.4",
-  "_where": "/Users/jeff/workspace/pig-console",
-  "author": "Travis Webb <tjwebb@langa.io>",
-  "bugs": {
-    "url": "https://github.com/waterlinejs/sqlite3-adapter/issues"
-  },
-  "bundleDependencies": [
-    "knex",
-    "lodash",
-    "moment",
-    "waterline-cursor",
-    "waterline-errors",
-    "waterline-sequel"
-  ],
-  "dependencies": {
-    "knex": "^0.9",
-    "lodash": "^3.10.0",
-    "moment": "^2.10.6",
-    "sqlite3": "^3.1.4",
-    "waterline-cursor": "0.0.6",
-    "waterline-errors": "^0.10.1",
-    "waterline-sequel": "^0.5.0"
-  },
-  "description": "Waterline Adapter for SQLite3",
-  "devDependencies": {
-    "babel": "5.8.38",
-    "gulp": "3.9.1",
-    "gulp-babel": "5.2.0",
-    "mocha": "latest",
-    "waterline-adapter-tests": "^0.12.0"
-  },
+  "name": "waterline-sqlite3-es5",
+  "version": "1.0.0",
+  "description": "A Waterline adapter for SQLite3.",
+  "main": "gulpfile.js",
   "directories": {
     "lib": "lib",
     "test": "test"
   },
-  "dist": {
-    "shasum": "6f63365b8bcdff52b37867f64612806413eace33",
-    "tarball": "https://registry.npmjs.org/waterline-sqlite3/-/waterline-sqlite3-1.0.4.tgz"
+  "dependencies": {
+    "waterline-adapter-tests": "^0.12.1"
   },
-  "engines": {
-    "node": ">= 4.0.0"
-  },
-  "homepage": "https://github.com/waterlinejs/sqlite3-adapter#readme",
-  "keywords": [
-    "sqlite",
-    "sqlite3",
-    "node orm",
-    "orm",
-    "driver",
-    "es6"
-  ],
-  "license": "MIT",
-  "main": "dist/adapter",
-  "maintainers": [
-    "balderdash <hello@balderdash.io>",
-    "tjwebb <me@traviswebb.com>",
-    "waterlinejs <waterline@balderdash.io>"
-  ],
-  "name": "waterline-sqlite3-es5",
-  "optionalDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/waterlinejs/sqlite3-adapter.git"
+  "devDependencies": {
+    "mocha": "^4.0.0"
   },
   "scripts": {
-    "postinstall": "npm run prepublish",
-    "prepublish": "gulp",
-    "test": "gulp && rm -rf .tmp/ ; NODE_ENV=test node test/integration/runner.js"
+    "test": "mocha"
   },
-  "url": "http://github.com/waterlinejs/sqlite3-adapter",
-  "version": "1.0.5",
-  "waterlineAdapter": {
-    "waterlineVersion": ">0.10.0",
-    "interfaces": [
-      "associations",
-      "migratable",
-      "queryable",
-      "semantic",
-      "sql"
-    ],
-    "features": [
-      "autoIncrement",
-      "crossAdapter",
-      "unique"
-    ]
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swanie42/waterline-sqlite3-es5.git"
+  },
+  "keywords": [
+    "waterline-sqlite3-es5"
+  ],
+  "author": "Langa and Jeff Swanson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/swanie42/waterline-sqlite3-es5/issues"
+  },
+  "homepage": "https://github.com/swanie42/waterline-sqlite3-es5#readme"
 }

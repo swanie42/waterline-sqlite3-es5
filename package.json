@@ -1,7 +1,7 @@
 {
   "name": "waterline-sqlite3-es5",
   "description": "A Waterline adapter for SQLite3.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Langa and Jeff Swanson",
   "keywords": [
     "waterline-sqlite3-es5"

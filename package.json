@@ -1,32 +1,67 @@
 {
   "name": "waterline-sqlite3-es5",
-  "version": "1.0.0",
   "description": "A Waterline adapter for SQLite3.",
-  "main": "gulpfile.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
-  "dependencies": {
-    "waterline-adapter-tests": "^0.12.1"
-  },
-  "devDependencies": {
-    "mocha": "^4.0.0"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
+  "version": "1.0.1",
+  "author": "Langa and Jeff Swanson",
+  "keywords": [
+    "waterline-sqlite3-es5"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/swanie42/waterline-sqlite3-es5.git"
   },
-  "keywords": [
-    "waterline-sqlite3-es5"
+  "dependencies": {
+    "knex": "^0.9",
+    "lodash": "^3.10.0",
+    "moment": "^2.10.6",
+    "sqlite3": "^3.1.4",
+    "waterline-cursor": "0.0.6",
+    "waterline-errors": "^0.10.1",
+    "waterline-sequel": "^0.5.0"
+  },
+  "devDependencies": {
+    "babel": "5.8.38",
+    "gulp": "3.9.1",
+    "gulp-babel": "5.2.0",
+    "mocha": "latest",
+    "waterline-adapter-tests": "^0.12.0"
+  },
+  "bundledDependencies": [
+    "knex",
+    "lodash",
+    "moment",
+    "waterline-cursor",
+    "waterline-errors",
+    "waterline-sequel"
   ],
-  "author": "Langa and Jeff Swanson",
+  "scripts": {
+    "test": "gulp && rm -rf .tmp/ ; NODE_ENV=test node test/integration/runner.js",
+    "prepublish": "gulp",
+    "postinstall": "npm run prepublish"
+  },
+  "main": "dist/adapter",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/swanie42/waterline-sqlite3-es5/issues"
   },
+  "waterlineAdapter": {
+    "waterlineVersion": ">0.10.0",
+    "interfaces": [
+      "associations",
+      "migratable",
+      "queryable",
+      "semantic",
+      "sql"
+    ],
+    "features": [
+      "autoIncrement",
+      "crossAdapter",
+      "unique"
+    ]
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+
   "homepage": "https://github.com/swanie42/waterline-sqlite3-es5#readme"
 }
